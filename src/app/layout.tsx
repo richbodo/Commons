@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head><script dangerouslySetInnerHTML={{ __html: APPEARANCE_SCRIPT }} /></head>
+      <head><script dangerouslySetInnerHTML={{ __html: APPEARANCE_SCRIPT }} /><link rel="alternate" type="application/rss+xml" title={`${COMMUNITY.name} public posts`} href="/feed.xml" /></head>
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <div className="flex-1">{children}</div>
         <footer className="commons-footer mx-auto w-full max-w-6xl">

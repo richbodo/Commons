@@ -72,6 +72,7 @@ test('metadata, footer and policy templates render the configured identity and o
   assert.equal(layout.metadata.openGraph.title, 'Neighbourhood — Good things start with a connection.')
   const html = renderToStaticMarkup(layout.default({ children: null }))
   assert.match(html, /Built on Commons by/)
+  assert.match(html, /<link rel="alternate" type="application\/rss\+xml" title="Neighbourhood public posts" href="\/feed.xml"\/>/)
   assert.match(html, /https:\/\/github.com\/BigLeverVentures\/Commons/)
   assert.match(html, /mailto:help@example.test/)
   for (const route of ['privacy', 'terms']) {

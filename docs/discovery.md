@@ -10,6 +10,10 @@ Type/topic filters and the board's selected view affect visible results. Search 
 
 Changing topic labels changes the indexed topic text after rebuild. Changing stored IDs requires migration; retain the existing IDs for presentation-only edits. Changing search settings should be checked against representative short terms, accents, multiword queries, misspellings, and collaborator names.
 
+## Following public posts
+
+[`/feed.xml`](../src/app/feed.xml/route.ts) is an RSS 2.0 feed of the 50 most recently published public posts, newest first. Each item has the title, a link to the post's public page, the author's public display name, the publication date, the post type and the topic (its label and its stored ID) as categories, and a short plain-text summary of the description. The feed reads the same public post records as the guest board, so account emails, private introductions, and private directory data never appear in it. Add `?topic=<id>` with a topic ID such as `planet` to follow one topic; an unknown ID returns 404. Responses may be cached for five minutes, and the route skips session handling so they never carry a session cookie. Every page advertises the feed with an RSS autodiscovery link, and item links use `COMMUNITY.canonicalOrigin`.
+
 ## Helping people find the repository
 
 When the private repository is ready for public release, use a clear GitHub description: **A self-hosted community board for asks, offers, projects, and member connections. Built with Next.js and Supabase. MIT licensed.**

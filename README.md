@@ -31,7 +31,7 @@ Follow [the installation guide](docs/INSTALL.md) for a fresh Supabase project, s
 
 ## Included
 
-Public asks, offers, projects and outcomes; topic and type filters; local full-text search; member profiles; 48 local illustrated avatars; public photos and PDF/image attachments; independent reactions; a public FAQ; collaborator credits and mentions; private introductions; optional notification emails; and background file cleanup. Supabase row-level security restricts private records and writes. Public uploads are not a place for confidential material.
+Public asks, offers, projects and outcomes; topic and type filters; local full-text search; an RSS feed of public posts; member profiles; 48 local illustrated avatars; public photos and PDF/image attachments; independent reactions; a public FAQ; collaborator credits and mentions; private introductions; optional notification emails; and background file cleanup. Supabase row-level security restricts private records and writes. Public uploads are not a place for confidential material.
 
 ## Verification and release limits
 
